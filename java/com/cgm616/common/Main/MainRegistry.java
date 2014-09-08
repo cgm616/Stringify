@@ -18,9 +18,11 @@ import cpw.mods.fml.common.registry.GameRegistry;
 @Mod(modid = RefStrings.MODID, name = RefStrings.NAME, version = RefStrings.VERSION)
 public class MainRegistry {
 	
+	// Loads proxies
 	@SidedProxy(clientSide = RefStrings.CLIENTSIDE, serverSide = RefStrings.SERVERSIDE)
 	public static ServerProxy proxy;
 	
+	// Handles all PreLoad, Load, and PostLoad events
 	@EventHandler
 	public static void PreLoad(FMLPreInitializationEvent PreEvent) {
 		proxy.registerRenderInfo();
@@ -28,7 +30,7 @@ public class MainRegistry {
 	
 	@EventHandler
 	public static void Load(FMLInitializationEvent Event) {
-		AddRecipes();
+		AddRecipes(); // Calls the function to add recipes
 	}
 	
 	@EventHandler
@@ -36,7 +38,7 @@ public class MainRegistry {
 		
 	}
 	
-	private static void AddRecipes() {
+	private static void AddRecipes() { // Adds recipes through GameRegistry
 		GameRegistry.addShapelessRecipe(new ItemStack(Items.string, 3), Blocks.wool);
 		GameRegistry.addShapedRecipe(new ItemStack(Blocks.web, 1), "XYX", " X ", "X X", 'X', Items.string, 'Y', Items.slime_ball);
 	}
