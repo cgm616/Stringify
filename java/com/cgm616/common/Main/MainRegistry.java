@@ -5,6 +5,7 @@ import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 
+import com.cgm616.common.handlers.FuelHandler;
 import com.cgm616.common.lib.RefStrings;
 
 import cpw.mods.fml.common.Mod;
@@ -31,6 +32,7 @@ public class MainRegistry {
 	@EventHandler
 	public static void Load(FMLInitializationEvent Event) {
 		AddRecipes(); // Calls the function to add recipes
+		AddFuels();
 	}
 	
 	@EventHandler
@@ -41,6 +43,10 @@ public class MainRegistry {
 	private static void AddRecipes() { // Adds recipes through GameRegistry
 		GameRegistry.addShapelessRecipe(new ItemStack(Items.string, 3), Blocks.wool);
 		GameRegistry.addShapedRecipe(new ItemStack(Blocks.web, 1), "XYX", " X ", "X X", 'X', Items.string, 'Y', Items.slime_ball);
+	}
+	
+	private static void AddFuels() { // Adds fuels
+		GameRegistry.registerFuelHandler(new FuelHandler());
 	}
 
 }
