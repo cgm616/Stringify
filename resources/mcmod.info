@@ -1,14 +1,14 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
-  "version": "${version}",
+  "modid": "stringify",
+  "name": "Stringify",
+  "description": "String based utils!",
+  "version": "0.0.1",
   "mcversion": "${mcversion}",
-  "url": "",
+  "url": "http://github.com/cgm616/Stringify",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authorList": ["cgm616"],
+  "credits": "Made possible by tutorials watched on Youtube.",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
