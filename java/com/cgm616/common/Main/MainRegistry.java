@@ -41,7 +41,7 @@ public class MainRegistry {
 	}
 	
 	private static void AddRecipes() { // Adds recipes through GameRegistry
-		GameRegistry.addShapelessRecipe(new ItemStack(Items.string, 3), Blocks.wool);
+		GameRegistry.addShapelessRecipe(new ItemStack(Items.string, 4), Blocks.wool);
 		GameRegistry.addShapedRecipe(new ItemStack(Blocks.web, 1), "XYX", " X ", "X X", 'X', Items.string, 'Y', Items.slime_ball);
 	}
 	
