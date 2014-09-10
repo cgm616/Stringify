@@ -2,7 +2,7 @@
 {
   "modid": "stringify",
   "name": "Stringify",
-  "description": "String based utils!",
+  "description": "String based utils!  Adds a few extra recipes that I think should've been in vanilla.",
   "version": "0.0.1",
   "mcversion": "${mcversion}",
   "url": "http://github.com/cgm616/Stringify",
