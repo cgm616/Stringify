@@ -1,3 +1,4 @@
 Changelog:
+1.0.1 - Now able to craft all wool colors to string
 1.0.0 - Released the mod, commented code
 0.0.1 - Started mod, added basic functionality
