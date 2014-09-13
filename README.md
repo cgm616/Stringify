@@ -1,0 +1,1 @@
+http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/2209283-stringify-some-string-related-crafting-and
