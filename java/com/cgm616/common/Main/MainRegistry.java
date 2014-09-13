@@ -34,7 +34,7 @@ public class MainRegistry {
 	@EventHandler
 	public static void Load(FMLInitializationEvent Event) {
 		CraftingHandler.AddRecipes(); // Calls the function to add recipes
-		AddFuels();
+		RegisterHandlers(); // Calls the function to register handlers
 	}
 	
 	@EventHandler
@@ -42,7 +42,7 @@ public class MainRegistry {
 		
 	}
 	
-	private static void AddFuels() { // Adds fuels
+	private static void RegisterHandlers() { // Adds fuels
 		GameRegistry.registerFuelHandler(new FuelHandler());
 	}
 
