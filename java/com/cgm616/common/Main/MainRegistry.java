@@ -6,6 +6,7 @@ import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
+import com.cgm616.common.handlers.CraftingHandler;
 import com.cgm616.common.handlers.FuelHandler;
 import com.cgm616.common.lib.RefStrings;
 
@@ -32,36 +33,13 @@ public class MainRegistry {
 	
 	@EventHandler
 	public static void Load(FMLInitializationEvent Event) {
-		AddRecipes(); // Calls the function to add recipes
+		CraftingHandler.AddRecipes(); // Calls the function to add recipes
 		AddFuels();
 	}
 	
 	@EventHandler
 	public static void PostLoad(FMLPostInitializationEvent PostEvent) {
 		
-	}
-	
-	private static void AddRecipes() { // Adds recipes through GameRegistry
-		// Seperate recipes for all of the wool colors to string
-		GameRegistry.addShapelessRecipe(new ItemStack(Items.string, 4), Blocks.wool);
-		GameRegistry.addShapelessRecipe(new ItemStack(Items.string, 4), new ItemStack(Blocks.wool, 1, 1));
-		GameRegistry.addShapelessRecipe(new ItemStack(Items.string, 4), new ItemStack(Blocks.wool, 1, 2));
-		GameRegistry.addShapelessRecipe(new ItemStack(Items.string, 4), new ItemStack(Blocks.wool, 1, 3));
-		GameRegistry.addShapelessRecipe(new ItemStack(Items.string, 4), new ItemStack(Blocks.wool, 1, 4));
-		GameRegistry.addShapelessRecipe(new ItemStack(Items.string, 4), new ItemStack(Blocks.wool, 1, 5));
-		GameRegistry.addShapelessRecipe(new ItemStack(Items.string, 4), new ItemStack(Blocks.wool, 1, 6));
-		GameRegistry.addShapelessRecipe(new ItemStack(Items.string, 4), new ItemStack(Blocks.wool, 1, 7));
-		GameRegistry.addShapelessRecipe(new ItemStack(Items.string, 4), new ItemStack(Blocks.wool, 1, 8));
-		GameRegistry.addShapelessRecipe(new ItemStack(Items.string, 4), new ItemStack(Blocks.wool, 1, 9));
-		GameRegistry.addShapelessRecipe(new ItemStack(Items.string, 4), new ItemStack(Blocks.wool, 1, 10));
-		GameRegistry.addShapelessRecipe(new ItemStack(Items.string, 4), new ItemStack(Blocks.wool, 1, 11));
-		GameRegistry.addShapelessRecipe(new ItemStack(Items.string, 4), new ItemStack(Blocks.wool, 1, 12));
-		GameRegistry.addShapelessRecipe(new ItemStack(Items.string, 4), new ItemStack(Blocks.wool, 1, 13));
-		GameRegistry.addShapelessRecipe(new ItemStack(Items.string, 4), new ItemStack(Blocks.wool, 1, 14));
-		GameRegistry.addShapelessRecipe(new ItemStack(Items.string, 4), new ItemStack(Blocks.wool, 1, 15));
-		
-		// Recipe for string and slime to web
-		GameRegistry.addShapedRecipe(new ItemStack(Blocks.web, 1), "XYX", " X ", "X X", 'X', Items.string, 'Y', Items.slime_ball);
 	}
 	
 	private static void AddFuels() { // Adds fuels
