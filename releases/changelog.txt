@@ -1,4 +1,5 @@
 Changelog:
+1.0.2 - Changed organization slightly, commented further
 1.0.1 - Now able to craft all wool colors to string
-1.0.0 - Released the mod, commented code
+1.0.0 - Released the mod, commented code, now on minecraftforum.net
 0.0.1 - Started mod, added basic functionality
